@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Responsive Website</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style> 
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Workbench&display=swap');
+*{
+     font-family: "Oswald", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+ }
+  .bgimg{
+    background-image: url(https://images.hdqwalls.com/download/avengers-endgame-logo-4k-ih-1366x768.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position:center;
+        margin-top: 4%;
+  }
+  </style>
+</head>
+<body style="background-color: black;">
+
+
+  <nav class="navbar navbar-expand-lg" style="background-color:  #5f11a9; ">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home" style="color: whitesmoke;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products" style="color: whitesmoke;">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" style="color: whitesmoke;">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#payments" style="color: whitesmoke;">Payments</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <section id="home" class="p-5 text-center bgimg" style="padding-top: 5%;">
+    <div class="container">
+        <h1 class="head" style="font-size: 100px; color: whitesmoke; text-shadow: 2px 3px 10px #5f11a9;">Avengers</h1>
+        <p style="font-size: 40px; color: whitesmoke; text-shadow: 2px 3px 10px #5f11a9;">THE END GAME MERCHANDISE </p>  
+    </div>
+  </section>
+
+ 
+  <section id="products" class="p-5 bg-light bgimg" style="padding-top: 5%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/8171kEgHRRL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body" style="background-color: #5f11a9;">
+              <h5 class="card-title" style="color: whitesmoke;">Iron Man </h5>
+              <p class="card-text" style="color: whitesmoke;">PRICE : 2499</p>
+              <a href="#Payment" class="btnt" style="color: whitesmoke;">BUY NOW <i class="fa-solid fa-money-bill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1_.jpg" class="card-img-top" alt="Product 2">
+            <div class="card-body" style="background-color: #5f11a9;">
+              <h5 class="card-title" style="color: whitesmoke;" >Thor </h5>
+              <p class="card-text" style="color: whitesmoke;">PRICE : 2499</p>
+              <a href="#Payment" class="btnt" style="color: whitesmoke;">BUY NOW <i class="fa-solid fa-money-bill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://i.ebayimg.com/images/g/Q8YAAOSw-QZh-RY5/s-l1200.webp" class="card-img-top" alt="Product 3">
+              <div class="card-body" style="background-color: #5f11a9;">
+              <h5 class="card-title" style="color: whitesmoke;" >AMAZING SPIDERMAN</h5>
+              <p class="card-text" style="color: whitesmoke;">PRICE : 2499</p>
+              <a href="#Payment" class="btnt" style="color: whitesmoke;">BUY NOW <i class="fa-solid fa-money-bill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="p-5 text-center" style="padding-top: 5%; background-color: black;">
+    <div class="container" style="color: whitesmoke;">
+      <h1>Contact Information</h2>
+      <p>Email: ABC@GMAIL.COM</p>
+      <p>Phone: 1234567890</p>
+    </div>
+  </section>
+
+
+  <section id="payments" class="p-5" style="background-color: black;">
+    <div class="container">
+      <h2 class="text-center"  style="color: whitesmoke;" >Payments</h2>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img src="https://quickchart.io/qr?text=BarcodesInc&size=200" alt="QR Code" class="img-fluid">
+          <p  style="color: whitesmoke;">Scan this QR code to make a payment</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="upiID"  style="color: whitesmoke;">Enter your UPI ID</label>
+              <input type="text" class="form-control" id="upiID" placeholder="example@upi">
+            </div>
+            <button type="submit" class="btn btn-primary"  style="color: whitesmoke;">Request Payment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
